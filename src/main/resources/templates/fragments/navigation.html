@@ -1,0 +1,15 @@
+<nav th:fragment="navigation (module)" class="navbar navbar-dark navbar-expand bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" th:href="@{/loanRequests}">Spring Basic</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a href="#" th:href="@{/loanRequests}" class="nav-link" th:classappend="${module == 'loanRequests'} ? active">Loan requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" th:href="@{/createLoanRequest}">New</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,44 @@
+<div th:fragment="form (readonly)">
+    <div class="mb-3">
+        <label for="id" class="form-label">#</label>
+        <input type="text" class="form-control" id="id" th:field="*{id}" readonly required>
+    </div>
+    <div class="mb-3">
+        <label for="requestDate" class="form-label">Request date</label>
+        <input type="date" class="form-control" id="requestDate" th:field="*{requestDate}" th:readonly="${readonly}" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please provide a request date
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="debitor" class="form-label">Debitor</label>
+        <input type="text" class="form-control" id="debitor" th:field="*{debitor}" th:readonly="${readonly}" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+        <div class="invalid-feedback">
+            Please provide a debitor
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="amount" class="form-label">Amount</label>
+        <div class="input-group">
+            <input type="number" class="form-control " id="amount" th:field="*{amount}" th:readonly="${readonly}"
+                   required min="1" style="text-align: right">
+            <span class="input-group-text">.00 €</span>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Please provide a positive amount as number
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control" id="description" th:field="*{description}" th:readonly="${readonly}">
+    </div>
+</div>
