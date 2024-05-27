@@ -3,5 +3,3 @@ spring:
     name: Spring Basic
   main:
     banner-mode: off
-  liquibase:
-    change-log: classpath:/db/changelog/db.changelog-master.xml

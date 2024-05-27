@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = LoanRequestService.class)
-public class LoadRequestServiceTest {
+public class LoadRequestServiceSpringTest {
 
     @Autowired
     LoanRequestService loanRequestService;

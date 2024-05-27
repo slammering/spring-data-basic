@@ -15,7 +15,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
-public class LoadRequestServiceTestMockito {
+public class LoadRequestServiceMockitoTest {
 
     @InjectMocks
     LoanRequestService loanRequestService;

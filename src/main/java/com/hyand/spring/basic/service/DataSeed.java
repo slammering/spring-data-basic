@@ -17,6 +17,7 @@ import java.util.stream.IntStream;
 public class DataSeed {
 
     public static final int NUMBER_OF_REQUESTS = 25;
+
     private final LoanRequestService loanRequestRepository;
 
     @PostConstruct
